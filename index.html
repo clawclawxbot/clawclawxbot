@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLAWCLAWX — Crypto Intelligence Bot for Telegram</title>
+  <meta name="description" content="CLAWCLAWX is a Telegram bot for real-time crypto prices, charts, market data and price alerts. Free, no sign-up — info and education only, not financial advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav">
+    <a href="#hero" class="nav__brand"><img src="assets/logo.png" alt="" class="nav__logo" />CLAWCLAWX</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__menu">
+      <div class="nav__links">
+        <a href="#token">Token</a>
+        <a href="docs.html">Docs</a>
+        <a href="governance.html">Governance</a>
+        <a href="#powered">Ecosystem</a>
+      </div>
+      <a href="https://t.me/Clawclawx_bot" target="_blank" rel="noopener" class="tg-btn nav__cta">
+        <svg viewBox="0 0 24 24" class="tg-ic" aria-hidden="true">
+          <path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/>
+        </svg>
+        @Clawclawx_bot
+      </a>
+    </div>
+  </nav>
+
+  <!-- Ambient animated glow blobs -->
+  <div class="ambient">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <span class="blob blob--4"></span>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero section" id="hero">
+      <div class="hero__inner">
+        <img class="hero__art" src="assets/hero.png" alt="" onerror="this.remove()" />
+        <div class="hero__content">
+          <h1 class="hero__title glow">
+            <span>CLAW</span><span>CLAWX</span>
+          </h1>
+          <p class="hero__subtitle">
+            Real-time crypto prices, charts, market data &amp; alerts —<br />
+            an AI-powered intelligence agent, right inside Telegram.
+          </p>
+          <div class="pill-row">
+            <span class="pill">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M3 17l6-6 4 4 7-7M14 8h6v6"/></svg>
+              Live prices &amp; charts
+            </span>
+            <span class="pill">
+              <svg viewBox="0 0 24 24" class="ic"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9ZM10 21a2 2 0 0 0 4 0"/></svg>
+              Custom price alerts
+            </span>
+          </div>
+          <a href="https://t.me/Clawclawx_bot" target="_blank" rel="noopener" class="tg-btn">
+            <svg viewBox="0 0 24 24" class="tg-ic" aria-hidden="true">
+              <path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/>
+            </svg>
+            @Clawclawx_bot
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOKEN $CLAWX (stage) ============ -->
+    <section class="section token-stage" id="token">
+      <div class="stage">
+        <h2 class="stage__ticker" aria-label="$CLAWX"><span>$</span><span>C</span><span>L</span><span>A</span><span>W</span><span>X</span></h2>
+
+        <!-- Center mascot — drop your image at assets/clawx.png -->
+        <img class="stage__art" src="assets/clawx.png" alt="$CLAWX mascot"
+             onerror="this.style.display='none'" />
+
+        <!-- bottom-left: tagline + CA copy + socials -->
+        <div class="stage__corner stage__corner--left">
+          <p class="stage__tag">Your claw<br />to the moon</p>
+          <div class="ca-pill">
+            <span class="ca-pill__text">CA: Coming soon</span>
+            <button class="copy-btn" data-copy="TBA">Copy</button>
+          </div>
+          <div class="socials">
+            <a href="https://x.com/clawclawxbot" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+            </a>
+            <a href="https://t.me/clawclawx" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/></svg>
+            </a>
+            <a href="https://github.com/clawclawxbot" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.15 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- bottom-right: buy on pump.fun + countdown -->
+        <div class="stage__corner stage__corner--right">
+          <p class="stage__tag">Buy on<br />pump.fun</p>
+          <a class="buy-btn" href="https://pump.fun" target="_blank" rel="noopener">Buy $CLAWX</a>
+          <div class="countdown countdown--mini" data-deadline="2026-06-06T19:00:00Z" aria-label="Launch countdown">
+            <div class="cd-box"><b data-cd="days">--</b><span>D</span></div>
+            <div class="cd-box"><b data-cd="hours">--</b><span>H</span></div>
+            <div class="cd-box"><b data-cd="mins">--</b><span>M</span></div>
+            <div class="cd-box"><b data-cd="secs">--</b><span>S</span></div>
+          </div>
+          <p class="cd-label">Launch · June 6, 2026 — 7:00 PM UTC</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO + SPEAKERS ============ -->
+    <section class="section panel" id="intro">
+      <div class="panel__chrome">
+        <span class="brand">CLAWCLAWX</span>
+        <span class="year">2026</span>
+      </div>
+
+      <div class="stats">
+        <span class="stat-badge" style="--x:6%; --y:14%">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+          <b data-count="34352">0</b>
+        </span>
+        <span class="stat-badge" style="--x:54%; --y:8%">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 3c1.5 3 4 4 4 7a4 4 0 0 1-8 0c0-1 .5-2 1-3 .8 1 1.5 1.5 3-4Z"/></svg>
+          <b data-count="12480">0</b>
+        </span>
+        <span class="stat-badge" style="--x:26%; --y:24%">
+          <svg viewBox="0 0 24 24" class="ic"><path d="m12 3 2.7 5.5 6 .9-4.3 4.2 1 6L12 17l-5.4 2.6 1-6L3.3 9.4l6-.9L12 3Z"/></svg>
+          <b data-count="8920">0</b>
+        </span>
+        <span class="stat-badge" style="--x:84%; --y:46%">
+          <svg viewBox="0 0 24 24" class="ic" fill="currentColor" stroke="none"><path d="M12 21S4 14.5 4 8.8A4.3 4.3 0 0 1 12 6a4.3 4.3 0 0 1 8 2.8C20 14.5 12 21 12 21Z"/></svg>
+          <b data-count="34352">0</b>
+        </span>
+      </div>
+
+      <div class="intro__row">
+        <img class="side-art" src="assets/about.png" alt="" onerror="this.remove()" />
+        <div class="intro__body">
+      <div class="intro__copy">
+        <p class="lead">
+          CLAWCLAWX turns raw market data into instant, readable answers —
+          right inside your Telegram chat.
+        </p>
+        <p class="lead lead--muted">
+          Ask for any coin and get prices, charts, conversions and alerts in
+          seconds. Free, no sign-up, no spreadsheets, no wallet connection.
+        </p>
+      </div>
+
+      <div class="speakers">
+        <article class="speaker">
+          <span class="avatar" data-initials="💵"></span>
+          <div>
+            <h4>Live Prices</h4>
+            <p>Price, 24h change &amp; market cap for any coin</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <span class="avatar avatar--b" data-initials="📈"></span>
+          <div>
+            <h4>Charts</h4>
+            <p>Clean dark-themed price charts, 1–365 days</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <span class="avatar avatar--c" data-initials="🔔"></span>
+          <div>
+            <h4>Alerts</h4>
+            <p>Get pinged when a coin crosses your target</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <span class="avatar avatar--d" data-initials="🌍"></span>
+          <div>
+            <h4>Market Data</h4>
+            <p>Global cap, BTC dominance &amp; top movers</p>
+          </div>
+        </article>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KEY TOPICS ============ -->
+    <section class="section panel section--solid" id="topics">
+      <div class="panel__chrome">
+        <span class="brand">CLAWCLAWX</span>
+        <span class="year">2026</span>
+      </div>
+
+      <h2 class="big-title glow"><span>Core</span> commands</h2>
+
+      <div class="topic-grid">
+        <article class="topic-card t1">
+          <span class="topic-num">Prices &amp; charts</span>
+          <p>/p · /info · /chart · /convert</p>
+        </article>
+        <article class="topic-card t2">
+          <span class="topic-num">Market</span>
+          <p>/top · /trending · /gainers · /losers · /global · /feargreed</p>
+        </article>
+        <article class="topic-card t3">
+          <span class="topic-num">Token &amp; Solana</span>
+          <p>/tokenomics · /launch · /sol</p>
+        </article>
+        <article class="topic-card t4">
+          <span class="topic-num">Watchlist</span>
+          <p>/watch · /unwatch · /watchlist</p>
+        </article>
+        <article class="topic-card t5">
+          <span class="topic-num">Alerts</span>
+          <p>/alert · /alerts · /delalert</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WHO IS IT FOR ============ -->
+    <section class="section panel panel--center" id="audience">
+      <div class="panel__chrome">
+        <span class="brand">CLAWCLAWX</span>
+        <span class="year">2026</span>
+      </div>
+
+      <div class="audience-row">
+      <div class="audience">
+        <span class="float-pill fp1">Crypto traders</span>
+        <span class="float-pill fp2">HODLers &amp; investors</span>
+        <span class="float-pill fp3">DeFi &amp; Web3 users</span>
+        <h2 class="big-title glow stacked"><span>Who is it</span><span>for</span></h2>
+        <span class="float-pill fp4">Beginners learning crypto</span>
+        <span class="float-pill fp5">Busy people on the go</span>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ REASONS ============ -->
+    <section class="section panel section--solid" id="reasons">
+      <div class="panel__chrome">
+        <span class="brand">CLAWCLAWX</span>
+        <span class="year">2026</span>
+      </div>
+
+      <h2 class="big-title glow stacked center"><span>Why choose</span><span>CLAWCLAWX</span></h2>
+
+      <div class="reason-row">
+        <article class="reason">
+          <span class="reason-num"><img src="assets/why-1.png" alt="" onerror="this.remove()" />1</span>
+          <p>Real-time data straight from CoinGecko</p>
+        </article>
+        <article class="reason">
+          <span class="reason-num"><img src="assets/why-2.png" alt="" onerror="this.remove()" />2</span>
+          <p>Prices, charts &amp; alerts in one place</p>
+        </article>
+        <article class="reason">
+          <span class="reason-num"><img src="assets/why-3.png" alt="" onerror="this.remove()" />3</span>
+          <p>Lives entirely inside Telegram</p>
+        </article>
+        <article class="reason">
+          <span class="reason-num"><img src="assets/why-4.png" alt="" onerror="this.remove()" />4</span>
+          <p>Free &amp; instant — no sign-up needed</p>
+        </article>
+        <article class="reason">
+          <span class="reason-num"><img src="assets/why-5.png" alt="" onerror="this.remove()" />5</span>
+          <p>Private — no wallet, no API keys</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PERKS ============ -->
+    <section class="section panel" id="perks">
+      <div class="panel__chrome">
+        <span class="brand">CLAWCLAWX</span>
+        <span class="year">2026</span>
+      </div>
+
+      <div class="perks">
+        <div class="perks__content">
+          <h2 class="big-title glow stacked"><span>What you</span><span>get</span></h2>
+          <ul class="perk-list">
+            <li><span class="arrow">&rarr;</span> Prices, charts &amp; market data on demand</li>
+            <li><span class="arrow">&rarr;</span> Custom price alerts, checked 24/7</li>
+            <li><span class="arrow">&rarr;</span> Coin &amp; fiat conversions in one tap</li>
+            <li><span class="arrow">&rarr;</span> Global market &amp; top-mover snapshots</li>
+            <li><span class="arrow">&rarr;</span> 100% free — no account, no ads</li>
+          </ul>
+        </div>
+        <img class="side-art" src="assets/perks.png" alt="" onerror="this.remove()" />
+      </div>
+    </section>
+
+    <!-- ============ POWERED BY ============ -->
+    <section class="section powered" id="powered">
+      <p class="powered__label">Ecosystem</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />OpenClaw</a>
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />MoltBook</a>
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />ClawdBot</a>
+          <a class="pw" href="https://www.anthropic.com" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=64" alt="" onerror="this.remove()" />Anthropic Claude</a>
+          <a class="pw" href="https://aws.amazon.com" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64" alt="" onerror="this.remove()" />AWS</a>
+          <a class="pw" href="https://solana.com" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=solana.com&sz=64" alt="" onerror="this.remove()" />Solana</a>
+          <a class="pw" href="https://www.helius.dev" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=helius.dev&sz=64" alt="" onerror="this.remove()" />Helius</a>
+          <a class="pw" href="https://www.coingecko.com" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=coingecko.com&sz=64" alt="" onerror="this.remove()" />CoinGecko</a>
+          <a class="pw" href="https://telegram.org" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=telegram.org&sz=64" alt="" onerror="this.remove()" />Telegram</a>
+          <a class="pw" href="https://python-telegram-bot.org" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=python-telegram-bot.org&sz=64" alt="" onerror="this.remove()" />python-telegram-bot</a>
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />OpenClaw</a>
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />MoltBook</a>
+          <a class="pw" href="https://openclaw.ai" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=openclaw.ai&sz=64" alt="" onerror="this.remove()" />ClawdBot</a>
+          <a class="pw" href="https://www.anthropic.com" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=64" alt="" onerror="this.remove()" />Anthropic Claude</a>
+          <a class="pw" href="https://aws.amazon.com" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64" alt="" onerror="this.remove()" />AWS</a>
+          <a class="pw" href="https://solana.com" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=solana.com&sz=64" alt="" onerror="this.remove()" />Solana</a>
+          <a class="pw" href="https://www.helius.dev" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=helius.dev&sz=64" alt="" onerror="this.remove()" />Helius</a>
+          <a class="pw" href="https://www.coingecko.com" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=coingecko.com&sz=64" alt="" onerror="this.remove()" />CoinGecko</a>
+          <a class="pw" href="https://telegram.org" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=telegram.org&sz=64" alt="" onerror="this.remove()" />Telegram</a>
+          <a class="pw" href="https://python-telegram-bot.org" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="https://www.google.com/s2/favicons?domain=python-telegram-bot.org&sz=64" alt="" onerror="this.remove()" />python-telegram-bot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / FOOTER ============ -->
+    <section class="section cta" id="cta">
+      <img class="cta__logo" src="assets/logo.png" alt="CLAWCLAWX" onerror="this.remove()" />
+      <h2 class="cta__title glow">Start in Telegram.</h2>
+      <p class="cta__sub">Free · No sign-up · Info &amp; education only — not financial advice</p>
+      <a href="https://t.me/Clawclawx_bot" target="_blank" rel="noopener" class="tg-btn tg-btn--lg">
+        <svg viewBox="0 0 24 24" class="tg-ic" aria-hidden="true">
+          <path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/>
+        </svg>
+        @Clawclawx_bot
+      </a>
+      <footer class="foot">
+        <span class="brand"><img src="assets/logo.png" alt="" class="brand__logo" />CLAWCLAWX</span>
+        <div class="socials">
+          <a href="https://x.com/clawclawxbot" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+          </a>
+          <a href="https://github.com/clawclawxbot" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.15 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://t.me/clawclawx" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/></svg>
+          </a>
+        </div>
+        <span>© 2026 · clawclawxbot.xyz</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

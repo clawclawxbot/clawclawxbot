@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLAWCLAWX — Documentation</title>
+  <meta name="description" content="How to use the CLAWCLAWX Telegram crypto info bot — commands, examples and FAQ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"><img src="assets/logo.png" alt="" class="nav__logo" />CLAWCLAWX</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__menu">
+      <div class="nav__links">
+        <a href="index.html#token">Token</a>
+        <a href="docs.html">Docs</a>
+        <a href="governance.html">Governance</a>
+        <a href="index.html#powered">Ecosystem</a>
+      </div>
+      <a href="https://t.me/Clawclawx_bot" target="_blank" rel="noopener" class="tg-btn nav__cta">
+        <svg viewBox="0 0 24 24" class="tg-ic" aria-hidden="true">
+          <path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/>
+        </svg>
+        @Clawclawx_bot
+      </a>
+    </div>
+  </nav>
+
+  <div class="ambient">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <span class="blob blob--4"></span>
+  </div>
+
+  <main class="page">
+    <span class="page__eyebrow">Documentation</span>
+    <h1 class="glow">Using CLAWCLAWX</h1>
+    <p class="page__intro">
+      CLAWCLAWX is a Telegram bot for real-time crypto prices, charts, market data
+      and price alerts. It is <strong>info &amp; education only — not financial
+      advice</strong>, and never touches your funds or keys.
+    </p>
+
+    <h2>Getting started</h2>
+    <ol>
+      <li>Open the bot: <a href="https://t.me/Clawclawx_bot" target="_blank" rel="noopener">t.me/Clawclawx_bot</a></li>
+      <li>Tap <strong>Start</strong> (or send <code>/start</code>).</li>
+      <li>Try <code>/p btc</code> to get the Bitcoin price — that's it.</li>
+    </ol>
+    <div class="note">
+      A coin can be a symbol (<code>btc</code>, <code>eth</code>, <code>sol</code>)
+      or a full name (<code>bitcoin</code>, <code>ethereum</code>).
+    </div>
+
+    <h2>Command reference</h2>
+    <div class="page__card">
+      <table class="cmd-table">
+        <thead>
+          <tr><th>Command</th><th>What it does</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>/p &lt;coin&gt;</code></td><td>Price, 24h change &amp; market cap</td><td><code>/p btc</code></td></tr>
+          <tr><td><code>/info &lt;coin&gt;</code></td><td>Rank, ATH/ATL, supply &amp; links</td><td><code>/info eth</code></td></tr>
+          <tr><td><code>/chart &lt;coin&gt; [days]</code></td><td>Price chart (default 7 days, 1–365)</td><td><code>/chart eth 30</code></td></tr>
+          <tr><td><code>/convert &lt;amt&gt; &lt;from&gt; &lt;to&gt;</code></td><td>Convert between coins &amp; fiat</td><td><code>/convert 2 btc usd</code></td></tr>
+          <tr><td><code>/top [n]</code></td><td>Top coins by market cap</td><td><code>/top 10</code></td></tr>
+          <tr><td><code>/trending</code></td><td>Coins trending right now</td><td><code>/trending</code></td></tr>
+          <tr><td><code>/gainers</code> · <code>/losers</code></td><td>Top 24h movers (top 250)</td><td><code>/gainers</code></td></tr>
+          <tr><td><code>/global</code></td><td>Global market cap, BTC dominance, top movers</td><td><code>/global</code></td></tr>
+          <tr><td><code>/feargreed</code></td><td>Crypto Fear &amp; Greed index</td><td><code>/feargreed</code></td></tr>
+          <tr><td><code>/watch</code> · <code>/unwatch</code></td><td>Add / remove a coin from your watchlist</td><td><code>/watch sol</code></td></tr>
+          <tr><td><code>/watchlist</code></td><td>Show your saved coins with live prices</td><td><code>/watchlist</code></td></tr>
+          <tr><td><code>/alert &lt;coin&gt; &lt;price&gt;</code></td><td>Notify you when a coin crosses a price</td><td><code>/alert btc 80000</code></td></tr>
+          <tr><td><code>/alerts</code> · <code>/delalert &lt;id&gt;</code></td><td>List / remove your alerts</td><td><code>/alerts</code></td></tr>
+          <tr><td><code>/help</code></td><td>Show the full command list</td><td><code>/help</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Examples</h2>
+    <h3>Check a price</h3>
+    <p>Send <code>/p sol</code> → you'll get Solana's price, 24h change, market cap and 24h volume.</p>
+    <h3>Set a price alert</h3>
+    <p>Send <code>/alert eth 4000</code>. The bot remembers your target and pings you the moment ETH crosses it. It checks prices every 60 seconds in the background.</p>
+    <h3>Read a chart</h3>
+    <p>Send <code>/chart btc 90</code> for a 90-day BTC chart, rendered in the CLAWCLAWX red theme.</p>
+
+    <h2>Data &amp; limits</h2>
+    <p>Market data is provided by the free <a href="https://www.coingecko.com/en/api" target="_blank" rel="noopener">CoinGecko API</a>. The free tier is rate-limited, so during very high traffic a command may take a moment or ask you to retry.</p>
+
+    <h2>Premium ($CLAWX)</h2>
+    <p>Holding <a href="index.html#token">$CLAWX</a> unlocks premium alerts &amp; signals, higher rate limits and fee discounts, and gives you a vote in <a href="governance.html">governance</a>.</p>
+
+    <h2>FAQ</h2>
+    <h3>Does the bot trade for me?</h3>
+    <p>No. CLAWCLAWX is information-only. It does not place orders, hold funds, or connect to your wallet or exchange keys.</p>
+    <h3>Is it free?</h3>
+    <p>Yes — all core commands are free with no sign-up. Premium features are unlocked with $CLAWX.</p>
+    <h3>Is this financial advice?</h3>
+    <p>No. Everything is for information and education only. Always do your own research.</p>
+
+    <a href="index.html" class="page__back">&larr; Back to home</a>
+
+    <footer class="foot">
+      <span class="brand"><img src="assets/logo.png" alt="" class="brand__logo" />CLAWCLAWX</span>
+      <div class="socials">
+        <a href="https://x.com/clawclawxbot" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+        </a>
+        <a href="https://github.com/clawclawxbot" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.15 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://t.me/clawclawx" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 2.9 11.5c-1.1.4-1 1.6 0 1.9l4.9 1.5 1.8 5.8c.3.8 1.2.9 1.7.3l2.7-2.6 5 3.7c.6.4 1.5.1 1.6-.7L23.9 5.4c.2-1-.7-1.6-1.6-1.2Z"/></svg>
+        </a>
+      </div>
+      <span>© 2026 · clawclawxbot.xyz</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[Unit]
+Description=CLAWCLAWX Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Sesuaikan path & user dengan VPS-mu (Ubuntu: ubuntu, Amazon Linux: ec2-user)
+WorkingDirectory=/home/ubuntu/clawclawx-bot
+ExecStart=/home/ubuntu/clawclawx-bot/.venv/bin/python /home/ubuntu/clawclawx-bot/bot.py
+Restart=always
+RestartSec=5
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
